@@ -1,155 +1,196 @@
-$grey: #3a4459;
-body{
-   color: $grey;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 14px;
-   line-height: 1.4;
+body {
+  color: #3a4459;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
 }
-img{
-   max-width: 100%;
-   height: auto;
+
+img {
+  max-width: 100%;
+  height: auto;
 }
-h1{
-   text-transform: uppercase;
-   letter-spacing: 5px;
-   font-size: 16px;
-   text-align: center;
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 16px;
+  text-align: center;
 }
-.block{
-   display: inline-block;
-   height: 8px;
-   width: 8px;
-   background: $grey;
-   transform: rotate(45deg);
-   margin: 0 20px;
-   position: relative;
-   top: -1px;
+
+.block {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background: #3a4459;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 0 20px;
+  position: relative;
+  top: -1px;
 }
-h1 .block{
-   margin: 0 20px 0 30px;
+
+h1 .block {
+  margin: 0 20px 0 30px;
 }
-h1 .block:first-child{
-   margin: 0 30px 0 20px;
+
+h1 .block:first-child {
+  margin: 0 30px 0 20px;
 }
-.bar-grid{
-   display: grid;
-   grid-template-columns: 1fr auto 1fr;
-   align-items: center;
-   margin: 30px 0;
+
+.bar-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto 1fr;
+      grid-template-columns: 1fr auto 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
 }
-.bar{
-   height: 1px;
-   width: 100%;
-   background: $grey;
+
+.bar {
+  height: 1px;
+  width: 100%;
+  background: #3a4459;
 }
-.wrap{
-   max-width: 900px;
-   margin: auto;
-   padding: 0 30px;
+
+.wrap {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 30px;
 }
-.grid{
-   display: grid;
-   grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
-   grid-gap: 35px;
-   grid-row-gap: 45px;
-   justify-content: center;
-   margin-bottom: 80px;
-   text-align: center;
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 35px;
+  grid-row-gap: 45px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 80px;
+  text-align: center;
 }
-.item{
-   display: grid;
-   .bg-img{
-     grid-row: 1 / -1;
-     grid-column: 1 / -1; 
-     height: 100%;
-     width: 100%;
-     z-index: -1;
-   }
+
+.item {
+  display: -ms-grid;
+  display: grid;
 }
-img.item{
-   width: 100% !important;
+
+.item .bg-img {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
-.tuna{
-   text-align: center;
-   columns: #fff;
-   padding: 0 30px;
-   grid-row: 1 / -1;
-   grid-column: 1 / -1; 
-   align-self: center;
-   p{
-      font-size: 11px;
-      color: #fff;
-      font-weight: 600;
-      letter-spacing: 1px;
-      span{
-         color: $grey;
-      }
-   }
+
+img.item {
+  width: 100% !important;
 }
-h3{
-   color: #fff;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   font-weight: 600;
+
+.tuna {
+  text-align: center;
+  -webkit-columns: #fff;
+          columns: #fff;
+  padding: 0 30px;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
-.sub-heading{
-   letter-spacing: 4px;
-   margin-bottom: 30px;
+
+.tuna p {
+  font-size: 11px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
-.quote:before{
-   content: '';
-   background: url(../img/quotes.jpg) no-repeat center;
-   height: 26px;
-   width: 39px;
-   display: block;
-   margin-bottom: 20px;
+
+.tuna p span {
+  color: #3a4459;
 }
-.quote{
-   align-self: flex-end;
-   margin-bottom: 80px;
-   font-size: 12px;
-   text-transform: uppercase;
-   font-weight: 600;
-   line-height: 1.8;
-   max-width: 215px;
-   text-align: left;
+
+h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
-.quote-right{
-   justify-self: end;
+
+.sub-heading {
+  letter-spacing: 4px;
+  margin-bottom: 30px;
 }
-.quote-name{
-   font-size: 10px;
-   margin-top: 8px;
-   color: #c75d49;
+
+.quote:before {
+  content: '';
+  background: url(../img/quotes.jpg) no-repeat center;
+  height: 26px;
+  width: 39px;
+  display: block;
+  margin-bottom: 20px;
 }
-.join-team{
-   text-align: center;
-   background: #eef1f2;
-   align-content: center;
-   padding: 20px;
-   position: relative;
-   p{
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      font-weight: 600;
-      line-height: 1.6;
-   }
+
+.quote {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 80px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.8;
+  max-width: 215px;
+  text-align: left;
 }
-.join-team:after{
-   content: '';
-   background: url(../img/martha.png) no-repeat center;
-   height: 139px;
-   width: 144px;
-   display: block;
-   position: absolute;
-   right: -46px;
-   bottom: -57px;   
+
+.quote-right {
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
-h2{
-   text-transform: uppercase;
-   font-size: 37px;
-   font-weight: 600;
-   letter-spacing: 4px;
-   line-height: 1.2;
-   margin: 0 0 10px;
+
+.quote-name {
+  font-size: 10px;
+  margin-top: 8px;
+  color: #c75d49;
 }
+
+.join-team {
+  text-align: center;
+  background: #eef1f2;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.join-team p {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.join-team:after {
+  content: '';
+  background: url(../img/martha.png) no-repeat center;
+  height: 139px;
+  width: 144px;
+  display: block;
+  position: absolute;
+  right: -46px;
+  bottom: -57px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 37px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+/*# sourceMappingURL=main.css.map */
